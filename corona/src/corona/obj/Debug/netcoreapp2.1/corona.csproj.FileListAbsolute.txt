@@ -1,0 +1,11 @@
+C:\Users\tnayanam\Desktop\corona\src\corona\bin\Debug\netcoreapp2.1\corona.deps.json
+C:\Users\tnayanam\Desktop\corona\src\corona\bin\Debug\netcoreapp2.1\corona.runtimeconfig.json
+C:\Users\tnayanam\Desktop\corona\src\corona\bin\Debug\netcoreapp2.1\corona.runtimeconfig.dev.json
+C:\Users\tnayanam\Desktop\corona\src\corona\bin\Debug\netcoreapp2.1\corona.dll
+C:\Users\tnayanam\Desktop\corona\src\corona\bin\Debug\netcoreapp2.1\corona.pdb
+C:\Users\tnayanam\Desktop\corona\src\corona\obj\Debug\netcoreapp2.1\corona.csproj.CoreCompileInputs.cache
+C:\Users\tnayanam\Desktop\corona\src\corona\obj\Debug\netcoreapp2.1\corona.AssemblyInfoInputs.cache
+C:\Users\tnayanam\Desktop\corona\src\corona\obj\Debug\netcoreapp2.1\corona.AssemblyInfo.cs
+C:\Users\tnayanam\Desktop\corona\src\corona\obj\Debug\netcoreapp2.1\corona.dll
+C:\Users\tnayanam\Desktop\corona\src\corona\obj\Debug\netcoreapp2.1\corona.pdb
+C:\Users\tnayanam\Desktop\corona\src\corona\obj\Debug\netcoreapp2.1\corona.csprojAssemblyReference.cache

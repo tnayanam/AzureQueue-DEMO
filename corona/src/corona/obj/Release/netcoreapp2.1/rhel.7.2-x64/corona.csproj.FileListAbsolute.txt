@@ -1,0 +1,10 @@
+C:\Users\tnayanam\Desktop\corona\src\corona\bin\Release\netcoreapp2.1\rhel.7.2-x64\corona.deps.json
+C:\Users\tnayanam\Desktop\corona\src\corona\bin\Release\netcoreapp2.1\rhel.7.2-x64\corona.runtimeconfig.json
+C:\Users\tnayanam\Desktop\corona\src\corona\bin\Release\netcoreapp2.1\rhel.7.2-x64\corona.runtimeconfig.dev.json
+C:\Users\tnayanam\Desktop\corona\src\corona\bin\Release\netcoreapp2.1\rhel.7.2-x64\corona.dll
+C:\Users\tnayanam\Desktop\corona\src\corona\bin\Release\netcoreapp2.1\rhel.7.2-x64\corona.pdb
+C:\Users\tnayanam\Desktop\corona\src\corona\obj\Release\netcoreapp2.1\rhel.7.2-x64\corona.csprojAssemblyReference.cache
+C:\Users\tnayanam\Desktop\corona\src\corona\obj\Release\netcoreapp2.1\rhel.7.2-x64\corona.AssemblyInfoInputs.cache
+C:\Users\tnayanam\Desktop\corona\src\corona\obj\Release\netcoreapp2.1\rhel.7.2-x64\corona.AssemblyInfo.cs
+C:\Users\tnayanam\Desktop\corona\src\corona\obj\Release\netcoreapp2.1\rhel.7.2-x64\corona.dll
+C:\Users\tnayanam\Desktop\corona\src\corona\obj\Release\netcoreapp2.1\rhel.7.2-x64\corona.pdb

@@ -1,0 +1,17 @@
+C:\Users\tnayanam\Desktop\corona\test\corona.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\tnayanam\Desktop\corona\test\corona.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\tnayanam\Desktop\corona\test\corona.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\tnayanam\Desktop\corona\test\corona.Tests\bin\Debug\netcoreapp2.1\corona.Tests.deps.json
+C:\Users\tnayanam\Desktop\corona\test\corona.Tests\bin\Debug\netcoreapp2.1\corona.Tests.runtimeconfig.json
+C:\Users\tnayanam\Desktop\corona\test\corona.Tests\bin\Debug\netcoreapp2.1\corona.Tests.runtimeconfig.dev.json
+C:\Users\tnayanam\Desktop\corona\test\corona.Tests\bin\Debug\netcoreapp2.1\corona.Tests.dll
+C:\Users\tnayanam\Desktop\corona\test\corona.Tests\bin\Debug\netcoreapp2.1\corona.Tests.pdb
+C:\Users\tnayanam\Desktop\corona\test\corona.Tests\bin\Debug\netcoreapp2.1\corona.dll
+C:\Users\tnayanam\Desktop\corona\test\corona.Tests\bin\Debug\netcoreapp2.1\corona.pdb
+C:\Users\tnayanam\Desktop\corona\test\corona.Tests\obj\Debug\netcoreapp2.1\corona.Tests.csprojAssemblyReference.cache
+C:\Users\tnayanam\Desktop\corona\test\corona.Tests\obj\Debug\netcoreapp2.1\corona.Tests.csproj.CoreCompileInputs.cache
+C:\Users\tnayanam\Desktop\corona\test\corona.Tests\obj\Debug\netcoreapp2.1\corona.Tests.AssemblyInfoInputs.cache
+C:\Users\tnayanam\Desktop\corona\test\corona.Tests\obj\Debug\netcoreapp2.1\corona.Tests.AssemblyInfo.cs
+C:\Users\tnayanam\Desktop\corona\test\corona.Tests\obj\Debug\netcoreapp2.1\corona.Tests.csproj.CopyComplete
+C:\Users\tnayanam\Desktop\corona\test\corona.Tests\obj\Debug\netcoreapp2.1\corona.Tests.dll
+C:\Users\tnayanam\Desktop\corona\test\corona.Tests\obj\Debug\netcoreapp2.1\corona.Tests.pdb
