@@ -18,7 +18,7 @@ namespace corona
     {
         private JsonSerializer _jsonSerializer = new JsonSerializer();
         private const string connectionString = "Endpoint=sb://lambdatest.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=m59uPYhZS1m8n0rkaQ3DLzOKPCQRP+FHiuM46cqYLyc=";
-        private const string queueName = "dynamoqueue";
+        private const string queueName = "queue7";
         private readonly IQueueClient client;
         public Function()
         {
@@ -45,7 +45,7 @@ namespace corona
                             string streamRecordJson = SerializeStreamRecord(record.Dynamodb);
                             context.Logger.LogLine("SerializeStreamRecord Completed");
                             context.Logger.LogLine("Calling Azure");
-                            await SendAsync(streamRecordJson, context).ConfigureAwait(false);
+                            await SendAsync(streamRecordJson, context);
                             context.Logger.LogLine("Calling Azure Completed");
                             context.Logger.LogLine($"DynamoDB Record:");
                             context.Logger.LogLine(streamRecordJson);
@@ -74,7 +74,7 @@ namespace corona
                 context.Logger.LogLine("Starting to send");
                 var message = new Message(Encoding.UTF8.GetBytes(stream));
                 context.Logger.LogLine("Message Ready");
-                await client.SendAsync(message).ConfigureAwait(false);
+                await client.SendAsync(message);
             }
             catch (Exception ex)
             {
