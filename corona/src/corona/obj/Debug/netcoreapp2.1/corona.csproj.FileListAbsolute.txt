@@ -8,3 +8,4 @@ C:\Users\tnayanam\Desktop\corona\src\corona\obj\Debug\netcoreapp2.1\corona.Assem
 C:\Users\tnayanam\Desktop\corona\src\corona\obj\Debug\netcoreapp2.1\corona.AssemblyInfo.cs
 C:\Users\tnayanam\Desktop\corona\src\corona\obj\Debug\netcoreapp2.1\corona.dll
 C:\Users\tnayanam\Desktop\corona\src\corona\obj\Debug\netcoreapp2.1\corona.pdb
+C:\Users\tnayanam\Desktop\corona\src\corona\obj\Debug\netcoreapp2.1\corona.csprojAssemblyReference.cache

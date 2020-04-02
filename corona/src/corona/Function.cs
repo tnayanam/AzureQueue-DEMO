@@ -8,7 +8,10 @@ using Amazon.DynamoDBv2.Model;
 using Microsoft.Azure.ServiceBus;
 using System.Threading.Tasks;
 using Amazon.DynamoDBv2;
+using Amazon.DynamoDBv2.DocumentModel;
+
 using System.Diagnostics;
+using System.Linq;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.Json.JsonSerializer))]
@@ -18,10 +21,10 @@ namespace corona
     public class Function
     {
         private JsonSerializer _jsonSerializer = new JsonSerializer();
-        //private string connectionString = Environment.GetEnvironmentVariable("QUEUE_END_POINT", EnvironmentVariableTarget.User);
-        //private string queueName = Environment.GetEnvironmentVariable("QUEUE_NAME", EnvironmentVariableTarget.User);
-        private string connectionString = Environment.GetEnvironmentVariable("QUEUE_END_POINT");
-        private string queueName = Environment.GetEnvironmentVariable("QUEUE_NAME");
+        private string connectionString = Environment.GetEnvironmentVariable("QUEUE_END_POINT", EnvironmentVariableTarget.User);
+        private string queueName = Environment.GetEnvironmentVariable("QUEUE_NAME", EnvironmentVariableTarget.User);
+        //private string connectionString = Environment.GetEnvironmentVariable("QUEUE_END_POINT");
+        //private string queueName = Environment.GetEnvironmentVariable("QUEUE_NAME");
         private readonly IQueueClient client;
         public Function()
         {
@@ -51,7 +54,12 @@ namespace corona
                             string streamRecordJson = SerializeStreamRecord(record.Dynamodb);
                             context.Logger.LogLine("SerializeStreamRecord Completed");
                             context.Logger.LogLine("Calling Azure");
-                            await SendAsync(streamRecordJson, context);
+
+                            var streamRecord = dynamoEvent.Records.First();
+
+                            var jsonResult = Document.FromAttributeMap(streamRecord.Dynamodb.NewImage).ToJson();
+                            Debug.Write(jsonResult);
+                            await SendAsync(jsonResult, context);
                             context.Logger.LogLine("Calling Azure Completed");
                             context.Logger.LogLine($"DynamoDB Record:");
                             context.Logger.LogLine(streamRecordJson);
