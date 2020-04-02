@@ -8,6 +8,7 @@ using Amazon.DynamoDBv2.Model;
 using Microsoft.Azure.ServiceBus;
 using System.Threading.Tasks;
 using Amazon.DynamoDBv2;
+using System.Diagnostics;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.Json.JsonSerializer))]
@@ -17,8 +18,10 @@ namespace corona
     public class Function
     {
         private JsonSerializer _jsonSerializer = new JsonSerializer();
-        private const string connectionString = "Endpoint=sb://lambdatest.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=m59uPYhZS1m8n0rkaQ3DLzOKPCQRP+FHiuM46cqYLyc=";
-        private const string queueName = "queue7";
+        //private string connectionString = Environment.GetEnvironmentVariable("QUEUE_END_POINT", EnvironmentVariableTarget.User);
+        //private string queueName = Environment.GetEnvironmentVariable("QUEUE_NAME", EnvironmentVariableTarget.User);
+        private string connectionString = Environment.GetEnvironmentVariable("QUEUE_END_POINT");
+        private string queueName = Environment.GetEnvironmentVariable("QUEUE_NAME");
         private readonly IQueueClient client;
         public Function()
         {
@@ -30,7 +33,10 @@ namespace corona
         public async Task FunctionHandler(DynamoDBEvent dynamoEvent, ILambdaContext context)
         {
             context.Logger.LogLine($"Beginning to process {dynamoEvent.Records.Count} records...");
-
+            context.Logger.LogLine($"Queue End point  {connectionString} records...");
+            var y = Environment.GetEnvironmentVariable("QUEUE_END_POINT");
+            context.Logger.LogLine($"Queue end point {y} records...");
+            //context.Logger.LogLine($"Queue Name {queueName} records...");
             try
             {
                 foreach (var record in dynamoEvent.Records)
